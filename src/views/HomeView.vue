@@ -98,7 +98,9 @@ changeC(){
 
      <!--vue  FOR迴圈 -->
      <!-- items.foreach((item)=>{}) -->
-      
+      <div v-for="item in array02">
+        <div v-if="item == 0">{{ item }}</div>
+      </div>
 
       <!-- 記住for 跟 if 不能共同使用 -->
 
