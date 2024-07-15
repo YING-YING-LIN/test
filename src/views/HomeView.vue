@@ -1,53 +1,54 @@
 <script>
 //要寫在export default{}裡面喔
-export default{
-  data(){
-  return{
-    name:'Nero' , 
-    id:'12345678',
-    array:['a','s','d','f','g'],
-    num:0,
-    inputType:'password',
-    changeColor:'blue',
-    showdiv:true,
-    array02:['0','1','2','3',],
-  }
-},
-//方法
-methods: {
-  plus(){
-    //要操控變數
-    console.log('有點到我');
-    //只要跨不同的東西前面都要加this
-    this.num=this.num+5;
-    console.log(this.num);
+export default {
+  data() {
+    return {
+      name: 'Nero',
+      id: '12345678',
+      array: ['a', 's', 'd', 'f', 'g'],
+      num: 0,
+      inputType: 'password',
+      changeColor: 'blue',
+      showdiv: true,
+      array02: ['0', '1', '2', '3']
+    };
   },
-  showhide(){
-    if(this.inputType=='text'){
-      this.inputType='password'
-    }else{this.inputType='text'}
-    console.log('有點到')
-  },
-  toggleColor() {
+  // 方法
+  methods: {
+    plus() {
+      // 要操控變數
+      console.log('有點到我');
+      // 只要跨不同的東西前面都要加 this
+      this.num = this.num + 5;
+      console.log(this.num);
+    },
+    showhide() {
+      if (this.inputType === 'text') {
+        this.inputType = 'password';
+      } else {
+        this.inputType = 'text';
+      }
+      console.log('有點到');
+    },
+    toggleColor() {
       // 切換顏色
-      if (this.changeColor == 'blue') {
+      if (this.changeColor === 'blue') {
         this.changeColor = 'red';
       } else {
         this.changeColor = 'blue';
       }
-      console.log('有點到')
-},
-
-changeC(){
-  if (this.changeColor == 'red') {
+      console.log('有點到');
+    },
+    changeC() {
+      if (this.changeColor === 'red') {
         this.changeColor = '';
       } else {
         this.changeColor = 'red';
       }
-
-},
-}
-}
+      console.log('有點到');
+    }
+  }
+};
 
 </script>
 
