@@ -10,7 +10,8 @@ export default{
             },
             pc:0,
         }
-    },methods: {
+    },
+    methods: {
     // moraplay_01() {
     //     this.result='';
 
